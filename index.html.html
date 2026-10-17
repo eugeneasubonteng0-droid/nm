@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="AS.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <img src="6.png" alt=""class="j">
+                <div class="menu">
+                    <ul>
+                        <li><a href="AS.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="home">\
+            <h1 class="hero">
+                WELCOME TO MY WEBSITE
+            </h1>
+        </div>
+    </div>
+
+    <script>
+            const images=[
+      "BD.jpeg",
+     "CBD.jpeg",
+    "FBD.jpeg",
+    "y.webp",
+    "EN.jpeg"
+
+];
+
+let currentIndex = 0;
+
+const main = document.querySelector(" .main");
+
+function changeImages() {
+    currentIndex++;
+
+    if
+    (currentIndex >= images.length){
+        currentIndex= 0;
+    }
+
+    main.style.backgroundImage = `url("${images[currentIndex]}")`;
+
+}
+
+setInterval(changeImages,9000);
+    </script>
+</body>
+</html>         
